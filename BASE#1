@@ -1,0 +1,120 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+   Name = "⚙️Cheat Engine Roblox⚙️",
+   Icon = 76723923569556, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
+   LoadingTitle = " V1 Cheat Engine Loading...",
+   LoadingSubtitle = "Made by, @liam_dc.dev2",
+   Theme = "Default", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+
+   DisableRayfieldPrompts = false,
+   DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
+
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "MADEBYLIAM@§"
+   },
+
+   Discord = {
+      Enabled = true, -- Prompt the user to join your Discord server if their executor supports it
+      Invite = "YwRe6qHwuR", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+
+   KeySystem = true, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "Acces",
+      Subtitle = "Key System",
+      Note = "Join The Discord for the Key", -- Use this to tell the user how to get a key
+      FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      SaveKey = false, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {"CE_1!" , "#§v21"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+   }
+})
+
+local MainTab = Window:CreateTab("Homepage", nil) -- Title, Image
+local MainSection = MainTab:CreateSection("Main")
+local Label = MainTab:CreateLabel(".gg/YwRe6qHwuR", nil, Color3.fromRGB(255, 255, 255), true) -- Title, Icon, Color, IgnoreTheme
+
+Rayfield:Notify({
+   Title = "Executed",
+   Content = "You Succesfull executed the Skript V1 / V1.1 Comming Soon",
+   Duration = 6.5,
+   Image = 76723923569556,
+   print("Made by, @liam_dc.dev2")
+})
+
+local Button = MainTab:CreateButton({
+   Name = "Fly GUI V3",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+      print("Fly GUI V3 Executed")
+      print("Made by, @liam_dc.dev2")
+   end,
+})
+
+local Slider = MainTab:CreateSlider({
+   Name = "Walkspeed",
+   Range = {0, 300},
+   Increment = 1,
+   Suffix = "Speed",
+   CurrentValue = 16,
+   Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Value)
+         print("Made by, @liam_dc.dev2")
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "Wallhack",
+   Callback = function()
+   Rayfield:Notify({
+   Title = "Development",
+   Content = "Wallhack is in Development / Status: 5/12",
+   Duration = 6.5,
+   Image = nil,
+   print("Made by, @liam_dc.dev2")
+})
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "Nameless Admin",
+   Callback = function()
+   print("Nameless Admin Executed")
+ loadstring(game:HttpGet('https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source'))()
+ print("Made by, @liam_dc.dev2")
+   end,
+})
+
+local MiscTab = Window:CreateTab("Misc", nil) -- Title, Image
+local MiscSection = MiscTab:CreateSection("Main")
+
+local Button = MiscTab:CreateButton({
+   Name = "Get Discord",
+   Callback = function()
+  Rayfield:Notify({
+   Title = "Discord",
+   Content = "Discord Link: https://discord.gg/YwRe6qHwuR",
+   Duration = 6.5,
+   Image = nil,
+    print("Made by, @liam_dc.dev2")
+})
+   end,
+})
+
+local Button = MiscTab:CreateButton({
+   Name = "Get Owners Name",
+   Callback = function()
+      Rayfield:Notify({
+   Title = "Owner Name",
+   Content = "discord @liam_dc.dev2",
+   Duration = 10,
+   Image = nil,
+   print("Made by, @liam_dc.dev2")
+})  
+   end,
+}) 
