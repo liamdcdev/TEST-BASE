@@ -46,9 +46,6 @@ Rayfield:Notify({
    print("Made by, @liam_dc.dev2")
 })
 
-function Environment.Functions:GetDocumentation()
-    setclipboard("https://discord.gg/YwRe6qHwur"); SendNotification(Title, "Join our Support Server. Copied in Clipboard", 3)
-end
 
 local Button = MainTab:CreateButton({
    Name = "Fly GUI V3",
@@ -69,19 +66,6 @@ local Slider = MainTab:CreateSlider({
    Callback = function(Value)
          game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Value)
          print("Made by, @liam_dc.dev2")
-   end,
-})
-
-local Button = MainTab:CreateButton({
-   Name = "Wallhack",
-   Callback = function()
-   Rayfield:Notify({
-   Title = "Development",
-   Content = "Wallhack is in Development / Status: 5/12",
-   Duration = 6.5,
-   Image = nil,
-   print("Made by, @liam_dc.dev2")
-})
    end,
 })
 
