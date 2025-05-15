@@ -46,6 +46,10 @@ Rayfield:Notify({
    print("Made by, @liam_dc.dev2")
 })
 
+function Environment.Functions:GetDocumentation()
+    setclipboard("https://discord.gg/YwRe6qHwur"); SendNotification(Title, "Join our Support Server. Copied in Clipboard", 3)
+end
+
 local Button = MainTab:CreateButton({
    Name = "Fly GUI V3",
    Callback = function()
