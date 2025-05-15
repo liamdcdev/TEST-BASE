@@ -45,6 +45,8 @@ local Label = MainTab:CreateLabel("Made by, @liam_dc.dev2", nil, Color3.fromRGB(
 local CheatTab = Window:CreateTab("Cheat", nil) -- Title, Image
 local CheatSection = CheatTab:CreateSection("Cheats")
 
+local Divider = CheatTab:CreateDivider()
+
 local Button = CheatTab:CreateButton({
    Name = "Aktivate Fly GUI V3",
    Callback = function()
