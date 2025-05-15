@@ -34,6 +34,8 @@ local Window = Rayfield:CreateWindow({
    }
 })
 
+Rayfield:Destroy()
+
 local MainTab = Window:CreateTab("Homepage", nil) -- Title, Image
 local MainSection = MainTab:CreateSection("Main")
 
