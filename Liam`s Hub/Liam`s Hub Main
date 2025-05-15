@@ -43,8 +43,6 @@ local Label = MainTab:CreateLabel("Made by, @liam_dc.dev2", nil, Color3.fromRGB(
 local CheatTab = Window:CreateTab("Cheat", nil) -- Title, Image
 local CheatSection = CheatTab:CreateSection("Cheats")
 
-local Paragraph = MainTab:CreateParagraph({Title = "Wichtig!", Content = "Benutzung ohne erlaubnis des Cheats fürt dazu das ein anderer Key gemacht wird."})
-
 local Button = CheatTab:CreateButton({
    Name = "Aktivate Fly GUI V3",
    Callback = function()
@@ -73,4 +71,3 @@ local Button = CheatTab:CreateButton({
    print("Adolf Hitler On Top")
    end,
 })
-
