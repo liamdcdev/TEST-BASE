@@ -1,0 +1,9 @@
+-- Paste following Script into your executor
+-- Recommending $olara
+
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Merdooon/skibidi-sigma-spec-ter/refs/heads/main/specter')))()
+
+-- Your current Key for the script: 193798
+------------------------------------------------
+-- On Bugs Or Errors Please Join The Discord and Report it
+-- discord.gg/r2wvDP3cgA
